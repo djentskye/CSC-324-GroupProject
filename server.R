@@ -21,5 +21,3 @@ server <- function(input, output, session) {
   observeEvent(input$page_E2_I, switch_page("I"))
 }
 
-# Run the application 
-shinyApp(ui = ui, server = server)
