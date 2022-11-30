@@ -1,0 +1,66 @@
+.tabbable > .nav > li > a {
+  background-color: green; 
+  color:white; 
+  width: 350px;
+  text-align: center;
+}
+
+.tabbable > .nav > .active > a {
+  background-color: white;
+  color: black;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+.tab {
+  background-image: url("museum_bg.png");
+  background-size: cover;
+  height:90vh;
+}
+
+.h4 {
+  align-items:center;
+  color:white;
+}
+div {
+  # background-color: #000080;
+}
+
+.doorDiv {
+  float: left;
+  width: 25%;
+  margin: auto;
+  padding: 200px 0px 30px 30px;
+  text-align: center;
+  text-color: white;
+}
+
+.leftDoorDiv {
+  float: left;
+  width: 20%;
+  padding: 200px 0px 30px 5px;
+  text-align: center;
+  text-color: white;
+}
+
+.rightDoorDiv {
+  float: right;
+  width: 20%;
+  padding: 200px 5px 30px 0px;
+  text-align: center;
+  text-color: white;
+}
+
+.door {
+  width: 200px;
+  height: 440px; 
+  background-image: url("door_img.png");
+  background-size: cover; 
+  background-position: center;
+  display:block; 
+  margin:auto; 
+  border-radius: 5px;
+}
