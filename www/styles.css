@@ -22,7 +22,7 @@ body {
 }
 
 .museum {
-  background-image: url("museum_bg.png");
+  background-image: url("museum_bg.jpg");
   background-size: cover;
   height:90vh;
 }
