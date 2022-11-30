@@ -1,6 +1,6 @@
 # Door helper
-door <- function(source, target){
-  actionButton(paste(source, "_to_", target, sep=""), "", class = "door")
+door <- function(source, target, className){
+  actionButton(paste(source, "_to_", target, sep=""), "", class = className)
 }
 
 # Arrow helpers
@@ -24,21 +24,21 @@ create_main <- function(){
     # Door1
     div(
       class = "doorDiv",
-      door("main", "E1"),
+      door("main", "E1", "door1"),
       h4("Exhibition 1")
     ),
     
     # Door2
     div(
       class = "doorDiv",
-      door("main", "E2"),
+      door("main", "E2", "door2"),
       h4("Exhibition 2")
     ),
     
     # Door3
     div(
       class = "doorDiv",
-      door("main", "E3"),
+      door("main", "E3", "door3"),
       h4("Exhibition 3")
     ),
     

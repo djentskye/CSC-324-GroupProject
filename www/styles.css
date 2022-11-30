@@ -1,7 +1,7 @@
 .tabbable > .nav > li > a {
+  width: 24vw;
   background-color: green; 
   color:white; 
-  width: 350px;
   text-align: center;
 }
 
@@ -81,12 +81,43 @@ div {
 .door {
   width: 200px;
   height: 440px; 
-  background-image: url("door_img.png");
+  background-color: blue;
+  /*background-image: url("door_img.png");*/
   background-size: cover; 
   background-position: center;
   display:block; 
   margin:auto; 
   border-radius: 5px;
+}
+
+.door1 {
+  display: block;
+  background-color: blue;
+  margin-left: 45px;
+  margin-top: -30px;
+  width: 310px;
+  height: 433px;
+  opacity:0;
+}
+
+.door2 {
+  display: block;
+  background-color: blue;
+  margin-left: 170px;
+  margin-top: 45px;
+  width: 170px;
+  height: 310px;
+  opacity:0;
+}
+
+.door3 {
+  display: block;
+  background-color: blue;
+  margin-left: 80px;
+  margin-top: 85px;
+  width: 110px;
+  height: 250px;
+  opacity:0;
 }
 
 .left_arrow {
