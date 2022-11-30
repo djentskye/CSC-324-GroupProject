@@ -1,6 +1,6 @@
 # Door helper
-door <- function(source, target){
-  actionButton(paste(source, "_to_", target, sep=""), "", class = "door")
+door <- function(source, target, className){
+  actionButton(paste(source, "_to_", target, sep=""), "", class = className)
 }
 
 # Helper function to move between exhibits
@@ -16,21 +16,21 @@ create_main <- function(){
     # Door1
     div(
       class = "doorDiv",
-      door("main", "E1"),
+      door("main", "E1", "door1"),
       h4("Exhibition 1")
     ),
     
     # Door2
     div(
       class = "doorDiv",
-      door("main", "E2"),
+      door("main", "E2", "door2"),
       h4("Exhibition 2")
     ),
     
     # Door3
     div(
       class = "doorDiv",
-      door("main", "E3"),
+      door("main", "E3", "door3"),
       h4("Exhibition 3")
     ),
     
@@ -49,7 +49,7 @@ create_exhibit_1 <- function(){
     # Left Door
     div(
       class = "leftDoorDiv",
-      door("E1", "E2"),
+      door("E1", "E2", "door"),
       h4("Exhibition 2")
     ),
     
@@ -58,7 +58,7 @@ create_exhibit_1 <- function(){
     # Right Door
     div(
       class = "rightDoorDiv",
-      door("E1", "E3"),
+      door("E1", "E3", "door"),
       h4("Exhibition 3")
     )
   )
@@ -73,7 +73,7 @@ create_exhibit_2 <- function(){
     # Left Door
     div(
       class = "leftDoorDiv",
-      door("E2", "E1"),
+      door("E2", "E1", "door"),
       h4("Exhibition 1")
     ),
     
@@ -82,7 +82,7 @@ create_exhibit_2 <- function(){
     # Right Door
     div(
       class = "rightDoorDiv",
-      door("E2", "E3"),
+      door("E2", "E3", "door"),
       h4("Exhibition 3")
     )
   )
@@ -96,7 +96,7 @@ create_exhibit_3 <- function(){
     # Left Door
     div(
       class = "leftDoorDiv",
-      door("E3", "E1"),
+      door("E3", "E1", "door"),
       h4("Exhibition 1")
     ),
     
@@ -105,7 +105,7 @@ create_exhibit_3 <- function(){
     # Right Door
     div(
       class = "rightDoorDiv",
-      door("E3", "E2"),
+      door("E3", "E2", "door"),
       h4("Exhibition 2")
     )
   )
