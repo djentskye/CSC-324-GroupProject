@@ -3,7 +3,15 @@ door <- function(source, target){
   actionButton(paste(source, "_to_", target, sep=""), "", class = "door")
 }
 
-# Helper function to move between exhibits
+# Arrow helpers
+left_arrow <- function(source, target){
+  actionButton(paste(source, "_to_", target, sep=""), "", class = "left_arrow")
+}
+right_arrow <- function(source, target){
+  actionButton(paste(source, "_to_", target, sep=""), "", class = "right_arrow")
+}
+
+# Helper function to move between pages
 switch_page <- function(name) {
   updateTabsetPanel(inputId = "wizard", selected = paste0("page_", name))
 }
@@ -41,15 +49,15 @@ create_main <- function(){
   )
 }
 
-# Function to create exhibit1
-create_exhibit_1 <- function(){
+# Function to create exhibition1
+create_exhibition_1 <- function(){
   div(
-    class = "exhibitContent",
+    class = "exhibitionContent",
 
     # Left Door
     div(
       class = "leftDoorDiv",
-      door("E1", "E2"),
+      left_arrow("E1", "E2"),
       h4("Exhibition 2")
     ),
     
@@ -58,22 +66,22 @@ create_exhibit_1 <- function(){
     # Right Door
     div(
       class = "rightDoorDiv",
-      door("E1", "E3"),
+      right_arrow("E1", "E3"),
       h4("Exhibition 3")
     )
   )
 }
 
 
-# Function to create exhibit2
-create_exhibit_2 <- function(){
+# Function to create exhibition2
+create_exhibition_2 <- function(){
   div(
-    class = "exhibitContent",
+    class = "exhibitionContent",
 
     # Left Door
     div(
       class = "leftDoorDiv",
-      door("E2", "E1"),
+      left_arrow("E2", "E1"),
       h4("Exhibition 1")
     ),
     
@@ -82,21 +90,21 @@ create_exhibit_2 <- function(){
     # Right Door
     div(
       class = "rightDoorDiv",
-      door("E2", "E3"),
+      right_arrow("E2", "E3"),
       h4("Exhibition 3")
     )
   )
 }
 
-# Function to create exhibit3
-create_exhibit_3 <- function(){
+# Function to create exhibition3
+create_exhibition_3 <- function(){
   div(
-    class = "exhibitContent",
+    class = "exhibitionContent",
 
     # Left Door
     div(
       class = "leftDoorDiv",
-      door("E3", "E1"),
+      left_arrow("E3", "E1"),
       h4("Exhibition 1")
     ),
     
@@ -105,7 +113,7 @@ create_exhibit_3 <- function(){
     # Right Door
     div(
       class = "rightDoorDiv",
-      door("E3", "E2"),
+      right_arrow("E3", "E2"),
       h4("Exhibition 2")
     )
   )

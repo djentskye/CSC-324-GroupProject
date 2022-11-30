@@ -16,7 +16,31 @@ body {
 }
 
 .tab {
+  background-image: url("Color-blue.jfif"); /* placeholder */
+  background-size: cover;
+  height:90vh;
+}
+
+.museum {
   background-image: url("museum_bg.png");
+  background-size: cover;
+  height:90vh;
+}
+
+.exhibition_1 {
+  background-image: url("Color-blue.jfif"); /* placeholder */
+  background-size: cover;
+  height:90vh;
+}
+
+.exhibition_2 {
+  background-image: url("Color-blue.jfif"); /* placeholder */
+  background-size: cover;
+  height:90vh;
+}
+
+.exhibition_3 {
+  background-image: url("Color-blue.jfif"); /* placeholder */
   background-size: cover;
   height:90vh;
 }
@@ -58,6 +82,28 @@ div {
   width: 200px;
   height: 440px; 
   background-image: url("door_img.png");
+  background-size: cover; 
+  background-position: center;
+  display:block; 
+  margin:auto; 
+  border-radius: 5px;
+}
+
+.left_arrow {
+  width: 200px;
+  height: 440px; 
+  background-image: url("green.jpg");
+  background-size: cover; 
+  background-position: center;
+  display:block; 
+  margin:auto; 
+  border-radius: 5px;
+}
+
+.right_arrow {
+  width: 200px;
+  height: 440px; 
+  background-image: url("green.jpg");
   background-size: cover; 
   background-position: center;
   display:block; 
