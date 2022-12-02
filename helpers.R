@@ -56,18 +56,14 @@ create_exhibition_1 <- function(){
 
     # Left Door
     div(
-      class = "leftDoorDiv",
       left_arrow("E1", "E2"),
-      h4("Exhibition 2")
     ),
     
-    actionButton("E1_to_map", "Go to map"),
+    actionButton("E1_to_map", "Go to map", class = "mapButton"),
 
     # Right Door
     div(
-      class = "rightDoorDiv",
       right_arrow("E1", "E3"),
-      h4("Exhibition 3")
     )
   )
 }
@@ -80,18 +76,14 @@ create_exhibition_2 <- function(){
 
     # Left Door
     div(
-      class = "leftDoorDiv",
       left_arrow("E2", "E1"),
-      h4("Exhibition 1")
     ),
     
-    actionButton("E2_to_map", "Go to map"),
+    actionButton("E2_to_map", "Go to map", class = "mapButton"),
 
     # Right Door
     div(
-      class = "rightDoorDiv",
       right_arrow("E2", "E3"),
-      h4("Exhibition 3")
     )
   )
 }
@@ -103,18 +95,14 @@ create_exhibition_3 <- function(){
 
     # Left Door
     div(
-      class = "leftDoorDiv",
       left_arrow("E3", "E1"),
-      h4("Exhibition 1")
     ),
     
-    actionButton("E3_to_map", "Go to map"),
+    actionButton("E3_to_map", "Go to map", class = "mapButton"),
 
     # Right Door
     div(
-      class = "rightDoorDiv",
       right_arrow("E3", "E2"),
-      h4("Exhibition 2")
     )
   )
 }

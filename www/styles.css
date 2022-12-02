@@ -1,13 +1,17 @@
 .tabbable > .nav > li > a {
   width: 24vw;
-  background-color: green; 
+  background-color: brown; 
   color:white; 
   text-align: center;
 }
 
 .tabbable > .nav > .active > a {
-  background-color: white;
+  background-color: lightgrey;
   color: black;
+}
+
+.container-fluid {
+  background-color: #C4A484;
 }
 
 body {
@@ -16,7 +20,7 @@ body {
 }
 
 .tab {
-  background-image: url("Color-blue.jfif"); /* placeholder */
+  background-image: url("IntroPageBackground.jpeg"); /* placeholder */
   background-size: cover;
   height:90vh;
 }
@@ -28,19 +32,19 @@ body {
 }
 
 .exhibition_1 {
-  background-image: url("Color-blue.jfif"); /* placeholder */
+  background-image: url("ArtExhibitBackground.jpeg"); /* placeholder */
   background-size: cover;
   height:90vh;
 }
 
 .exhibition_2 {
-  background-image: url("Color-blue.jfif"); /* placeholder */
+  background-image: url("DeepfakeExhibit.jpeg"); /* placeholder */
   background-size: cover;
   height:90vh;
 }
 
 .exhibition_3 {
-  background-image: url("Color-blue.jfif"); /* placeholder */
+  background-image: url("MusicPage.jpeg"); /* placeholder */
   background-size: cover;
   height:90vh;
 }
@@ -62,22 +66,6 @@ div {
   text-color: white;
 }
 
-.leftDoorDiv {
-  float: left;
-  width: 20%;
-  padding: 200px 0px 30px 5px;
-  text-align: center;
-  text-color: white;
-}
-
-.rightDoorDiv {
-  float: right;
-  width: 20%;
-  padding: 200px 5px 30px 0px;
-  text-align: center;
-  text-color: white;
-}
-
 .door {
   width: 200px;
   height: 440px; 
@@ -92,52 +80,71 @@ div {
 
 .door1 {
   display: block;
-  background-color: blue;
-  margin-left: 45px;
-  margin-top: -30px;
-  width: 310px;
-  height: 433px;
-  opacity:0;
+  margin-left: 15%;
+  margin-top: -8%;
+  width: 315px;
+  height: 438px;
+  opacity:0.0;
+}
+
+.door1:hover {
+  background-color: black;
+  opacity:0.15;
 }
 
 .door2 {
   display: block;
-  background-color: blue;
-  margin-left: 170px;
-  margin-top: 45px;
+  margin-left: 53%;
+  margin-top: 15%;
   width: 170px;
   height: 310px;
-  opacity:0;
+  opacity:0.0;
+}
+
+.door2:hover {
+  background-color: black;
+  opacity:0.15;
 }
 
 .door3 {
   display: block;
-  background-color: blue;
-  margin-left: 80px;
-  margin-top: 85px;
+  margin-left: 25%;
+  margin-top: 28%;
   width: 110px;
-  height: 250px;
-  opacity:0;
+  height: 242px;
+  opacity:0.0;
+}
+
+.door3:hover {
+  background-color: black;
+  opacity:0.15;
+}
+
+.exhibitionContent {
+  display: flex;
+  justify-content: center;
+}
+
+.mapButton {
+  display: block;
+  margin: auto;
 }
 
 .left_arrow {
-  width: 200px;
-  height: 440px; 
-  background-image: url("green.jpg");
+  width: 150px;
+  height: 50px;
+  transform: rotate(180deg);
+  background-image: url("arrow.png");
+  background-color: #ffffff00;
   background-size: cover; 
   background-position: center;
-  display:block; 
-  margin:auto; 
-  border-radius: 5px;
 }
 
 .right_arrow {
-  width: 200px;
-  height: 440px; 
-  background-image: url("green.jpg");
+  width: 150px;
+  height: 50px;
+  background-image: url("arrow.png");
+  background-color: #ffffff00;
   background-size: cover; 
   background-position: center;
-  display:block; 
-  margin:auto; 
-  border-radius: 5px;
 }
