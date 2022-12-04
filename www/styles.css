@@ -27,26 +27,30 @@ body {
 
 .museum {
   background-image: url("NavigationPage.jpeg");
-  background-size: cover;
-  height:100vh;
+  background-size: 100%;
+  width: 100%;
+  height:90vh;
 }
 
 .exhibition_1 {
   background-image: url("ArtExhibitBackground.jpeg"); /* placeholder */
-  background-size: cover;
-  height:100vh;
+  background-size: 100%;
+  width: 100%;
+  height:90vh;
 }
 
 .exhibition_2 {
   background-image: url("DeepfakeExhibit.jpeg"); /* placeholder */
-  background-size: cover;
-  height:100vh;
+  background-size: 100%;
+  width: 100%;
+  height:90vh;
 }
 
 .exhibition_3 {
   background-image: url("MusicPage.jpeg"); /* placeholder */
-  background-size: cover;
-  height:100vh;
+  background-size: 100%;
+  width: 100%;
+  height:90vh;
 }
 
 .h4 {
@@ -75,12 +79,14 @@ body {
 
 .door1 {
   display: block;
-  margin-left: 56%;
-  margin-top: 42.75%;
-  width: ;
-  height: 80%;
+  position: relative;
+  margin-left: 22%;
+  margin-top: 48%;
+  width: 85%;
+  height: 0;
+  padding-bottom: 120%;
   opacity:0.0;
-  transform: rotate(90deg) perspective(9px) rotateX(0.5deg)
+  /*transform: perspective(10px) rotateY(0.3deg)*/
 }
 
 .door1:hover {
@@ -90,11 +96,14 @@ body {
 
 .door2 {
   display: block;
-  margin-left: 53%;
-  margin-top: 15%;
-  width: 170px;
-  height: 310px;
+  position: relative;
+  margin-left: 56%;
+  margin-top: 70%;
+  width: 47%;
+  height: 0;
+  padding-bottom: 85%;
   opacity:0.0;
+  /*transform: perspective(10px) rotateY(0.3deg)*/
 }
 
 .door2:hover {
@@ -104,11 +113,14 @@ body {
 
 .door3 {
   display: block;
-  margin-left: 25%;
-  margin-top: 28%;
-  width: 110px;
-  height: 242px;
+  position: relative;
+  margin-left: 30.5%;
+  margin-top: 82%;
+  width: 30%;
+  height: 0;
+  padding-bottom: 66%;
   opacity:0.0;
+  /*transform: perspective(10px) rotateY(0.3deg)*/
 }
 
 .door3:hover {
