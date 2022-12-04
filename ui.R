@@ -1,6 +1,5 @@
 # Load packages ----
 library(shiny)
-library(shinythemes)
 library(rsconnect)
 
 source("helpers.R")
@@ -10,7 +9,7 @@ ui <- fluidPage(
 
   # Title
   titlePanel(
-    h1("AI GROUP PROJECT", align = "center")
+    h1("GAInES", align = "center")
   ),
   
   # CSS
