@@ -25,21 +25,18 @@ create_main <- function(){
     div(
       class = "doorDiv",
       door("main", "E1", "door1"),
-      h4("Exhibition 1")
     ),
     
     # Door2
     div(
       class = "doorDiv",
       door("main", "E2", "door2"),
-      h4("Exhibition 2")
     ),
     
     # Door3
     div(
       class = "doorDiv",
       door("main", "E3", "door3"),
-      h4("Exhibition 3")
     ),
     
     div(
@@ -49,19 +46,19 @@ create_main <- function(){
   )
 }
 
-# Function to create exhibition1
+# Function to create art exhibition
 create_exhibition_1 <- function(){
   div(
     class = "exhibitionContent",
 
-    # Left Door
+    # Left Arrow
     div(
       left_arrow("E1", "E2"),
     ),
     
     actionButton("E1_to_map", "Go to map", class = "mapButton"),
 
-    # Right Door
+    # Right Arrow
     div(
       right_arrow("E1", "E3"),
     )
@@ -69,41 +66,44 @@ create_exhibition_1 <- function(){
 }
 
 
-# Function to create exhibition2
+# Function to create deepfake exhibition
 create_exhibition_2 <- function(){
   div(
     class = "exhibitionContent",
 
-    # Left Door
+    # Left Arrow
     div(
       left_arrow("E2", "E1"),
     ),
     
     actionButton("E2_to_map", "Go to map", class = "mapButton"),
 
-    # Right Door
+    # Right Arrow
     div(
       right_arrow("E2", "E3"),
-    )
+    ),
+    
+    actionButton("deepfake1", "deepfake1", class = "deepfake1")
   )
 }
 
-# Function to create exhibition3
+# Function to create music exhibition
 create_exhibition_3 <- function(){
   div(
     class = "exhibitionContent",
 
-    # Left Door
+    # Left Arrow
     div(
       left_arrow("E3", "E1"),
     ),
     
     actionButton("E3_to_map", "Go to map", class = "mapButton"),
 
-    # Right Door
+    # Right Arrow
     div(
       right_arrow("E3", "E2"),
-    )
+    ),
+    
   )
 }
 

@@ -59,5 +59,16 @@ server <- function(input, output, session) {
   observeEvent(input$E2_to_map, switch_page("main"))
   observeEvent(input$E3_to_map, switch_page("main"))
   
+  observeEvent(input$deepfake1, {
+    showModal(modalDialog(
+      title = "Important message",
+      "This is an important message!",
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
 }
 

@@ -1,3 +1,8 @@
+body {
+  margin: 0px;
+  height: 100%;
+}
+
 .tabbable > .nav > li > a {
   width: 24vw;
   background-color: brown; 
@@ -14,11 +19,6 @@
   background-color: #C4A484;
 }
 
-body {
-  margin: 0px;
-  height: 100%;
-}
-
 .tab {
   background-image: url("IntroPageBackground.jpeg"); /* placeholder */
   background-size: cover;
@@ -26,42 +26,37 @@ body {
 }
 
 .museum {
-  background-image: url("museum_bg.jpg");
+  background-image: url("NavigationPage.jpeg");
   background-size: cover;
-  height:90vh;
+  height:100vh;
 }
 
 .exhibition_1 {
   background-image: url("ArtExhibitBackground.jpeg"); /* placeholder */
   background-size: cover;
-  height:90vh;
+  height:100vh;
 }
 
 .exhibition_2 {
   background-image: url("DeepfakeExhibit.jpeg"); /* placeholder */
   background-size: cover;
-  height:90vh;
+  height:100vh;
 }
 
 .exhibition_3 {
   background-image: url("MusicPage.jpeg"); /* placeholder */
   background-size: cover;
-  height:90vh;
+  height:100vh;
 }
 
 .h4 {
   align-items:center;
   color:white;
 }
-div {
-  # background-color: #000080;
-}
 
 .doorDiv {
   float: left;
   width: 25%;
-  margin: auto;
-  padding: 200px 0px 30px 30px;
   text-align: center;
   text-color: white;
 }
@@ -80,11 +75,12 @@ div {
 
 .door1 {
   display: block;
-  margin-left: 15%;
-  margin-top: -8%;
-  width: 315px;
-  height: 438px;
+  margin-left: 56%;
+  margin-top: 42.75%;
+  width: ;
+  height: 80%;
   opacity:0.0;
+  transform: rotate(90deg) perspective(9px) rotateX(0.5deg)
 }
 
 .door1:hover {
@@ -147,4 +143,10 @@ div {
   background-color: #ffffff00;
   background-size: cover; 
   background-position: center;
+}
+
+.deepfake1 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
 }
