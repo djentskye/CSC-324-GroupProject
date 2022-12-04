@@ -27,7 +27,7 @@ body {
 
 .museum {
   background-image: url("NavigationPage.jpeg");
-  background-size: cover;
+  background-size: 1880px;
   height:100vh;
 }
 
@@ -146,6 +146,54 @@ body {
 }
 
 .deepfake1 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.deepfake2 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.deepfake3 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.art1 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.art2 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.art3 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.music1 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.music2 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.music3 {
   display: block;
   margin-left: 20%;
   margin-top: 20%;
