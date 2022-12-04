@@ -62,7 +62,95 @@ server <- function(input, output, session) {
   observeEvent(input$deepfake1, {
     showModal(modalDialog(
       title = "Important message",
-      "This is an important message!",
+      includeHTML("./exhibits/deepfake1.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$deepfake2, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/deepfake2.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$deepfake3, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/deepfake3.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$art1, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/art1.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$art2, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/art2.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$art3, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/art3.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$music1, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/music1.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$music2, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/music2.html"),
+      size = "l",
+      easyClose = FALSE,
+      fade = TRUE,
+      style = "background-color: red;"
+    ))
+  })
+  
+  observeEvent(input$music3, {
+    showModal(modalDialog(
+      title = "Important message",
+      includeHTML("./exhibits/music3.html"),
       size = "l",
       easyClose = FALSE,
       fade = TRUE,

@@ -61,7 +61,11 @@ create_exhibition_1 <- function(){
     # Right Arrow
     div(
       right_arrow("E1", "E3"),
-    )
+    ),
+    
+    actionButton("art1", "art1", class = "art1"),
+    actionButton("art2", "art2", class = "art2"),
+    actionButton("art3", "art3", class = "art3")
   )
 }
 
@@ -83,7 +87,9 @@ create_exhibition_2 <- function(){
       right_arrow("E2", "E3"),
     ),
     
-    actionButton("deepfake1", "deepfake1", class = "deepfake1")
+    actionButton("deepfake1", "deepfake1", class = "deepfake1"),
+    actionButton("deepfake2", "deepfake2", class = "deepfake2"),
+    actionButton("deepfake3", "deepfake3", class = "deepfake3")
   )
 }
 
@@ -104,6 +110,9 @@ create_exhibition_3 <- function(){
       right_arrow("E3", "E2"),
     ),
     
+    actionButton("music1", "music1", class = "music1"),
+    actionButton("music2", "music2", class = "music2"),
+    actionButton("music3", "music3", class = "music3")
   )
 }
 
