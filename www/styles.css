@@ -20,37 +20,67 @@ body {
 }
 
 .tab {
-  background-image: url("IntroPageBackground.jpeg"); /* placeholder */
-  background-size: cover;
-  height:90vh;
+  background-image: url("IntroPageBackground.jpeg"); 
+  background-size: 100%;
+  height:100vh;
+}
+
+.about {
+  position: absolute;
+  width: 70%;
+  height: 20vh;
+  margin-left: 15%;
+  margin-top: 15%;
+  font-size: 25px;
+  color: black;
+}
+
+.design {
+  position: absolute;
+  width: 70%;
+  height: 20vh;
+  margin-left: 15%;
+  margin-top: 15%;
+  font-size: 25px;
+  color: black;
+}
+
+.sources {
+  position: absolute;
+  width: 70%;
+  height: 20vh;
+  margin-left: 15%;
+  margin-top: 15%;
+  font-size: 25px;
+  color: black;
 }
 
 .museum {
   background-image: url("NavigationPage.jpeg");
   background-size: 100%;
   width: 100%;
-  height:90vh;
+  height:100vh;
 }
 
 .exhibition_1 {
-  background-image: url("ArtExhibitBackground.jpeg"); /* placeholder */
+  background-image: url("ArtExhibitBackground.jpeg"); 
   background-size: 100%;
   width: 100%;
-  height:90vh;
+  height:100vh;
 }
 
 .exhibition_2 {
-  background-image: url("DeepfakeExhibit.jpeg"); /* placeholder */
+  background-image: url("DeepfakeExhibit.jpeg"); 
   background-size: 100%;
   width: 100%;
-  height:90vh;
+  height:100vh;
 }
 
 .exhibition_3 {
-  background-image: url("MusicPage.jpeg"); /* placeholder */
+  background-image: url("MusicPage.jpeg");
   background-size: 100%;
   width: 100%;
-  height:90vh;
+  height:100vh;
 }
 
 .h4 {
@@ -65,33 +95,21 @@ body {
   text-color: white;
 }
 
-.door {
-  width: 200px;
-  height: 440px; 
-  background-color: blue;
-  /*background-image: url("door_img.png");*/
-  background-size: cover; 
-  background-position: center;
-  display:block; 
-  margin:auto; 
-  border-radius: 5px;
-}
-
 .door1 {
   display: block;
   position: relative;
-  margin-left: 22%;
-  margin-top: 48%;
-  width: 85%;
+  margin-left: 21.5%;
+  margin-top: 48.5%;
+  width: 86%;
   height: 0;
   padding-bottom: 120%;
   opacity:0.0;
-  /*transform: perspective(10px) rotateY(0.3deg)*/
+  clip-path: polygon(1.5% 0, 100% 11%, 100% 94%, 0% 100%);
 }
 
 .door1:hover {
   background-color: black;
-  opacity:0.15;
+  opacity:0.3;
 }
 
 .door2 {
@@ -103,12 +121,12 @@ body {
   height: 0;
   padding-bottom: 85%;
   opacity:0.0;
-  /*transform: perspective(10px) rotateY(0.3deg)*/
+  clip-path: polygon(1.5% 0, 100% 9%, 100% 95%, 0% 100%);
 }
 
 .door2:hover {
   background-color: black;
-  opacity:0.15;
+  opacity:0.3;
 }
 
 .door3 {
@@ -120,15 +138,15 @@ body {
   height: 0;
   padding-bottom: 66%;
   opacity:0.0;
-  /*transform: perspective(10px) rotateY(0.3deg)*/
+  clip-path: polygon(1.5% 0, 98% 7%, 100% 95%, 0% 100%);
 }
 
 .door3:hover {
   background-color: black;
-  opacity:0.15;
+  opacity:0.3;
 }
 
-.exhibitionContent {
+.topNav {
   display: flex;
   justify-content: center;
 }
@@ -139,74 +157,190 @@ body {
 }
 
 .left_arrow {
-  width: 150px;
-  height: 50px;
-  transform: rotate(180deg);
-  background-image: url("arrow.png");
+  width: 100px;
+  height: 80px;
+  border:0px;
+  background-image: url("GreenArrow.png");
   background-color: #ffffff00;
   background-size: cover; 
   background-position: center;
+}
+
+.left_arrow:hover {
+  background-color: #ffffff00;
+  opacity: 0.5;
 }
 
 .right_arrow {
-  width: 150px;
-  height: 50px;
-  background-image: url("arrow.png");
+  width: 100px;
+  height: 80px;
+  border:0px;
+  transform: rotate(180deg);
+  background-image: url("GreenArrow.png");
   background-color: #ffffff00;
   background-size: cover; 
   background-position: center;
 }
 
-.deepfake1 {
-  display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+.right_arrow:hover {
+  background-color: #ffffff00;
+  opacity: 0.5;
 }
 
-.deepfake2 {
-  display: block;
-  margin-left: 20%;
-  margin-top: 20%;
-}
-
-.deepfake3 {
-  display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+.contentDiv {
+  float: left;
+  width: 33%;
+  text-align: center;
+  text-color: white;
 }
 
 .art1 {
   display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+  position: relative;
+  margin-left: 12.5%;
+  margin-top: 21%;
+  width: 36%;
+  height: 0;
+  padding-bottom: 116%;
+  opacity:0.0;
+  clip-path: polygon(100% 17.7%, 100% 92%, 0 100%, 0 0);
+  border-radius: 10px;
+}
+
+.art1:hover {
+  background-color: black;
+  opacity:0.3;
 }
 
 .art2 {
   display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+  position: relative;
+  margin-left: 21.5%;
+  margin-top: 73.5%;
+  width: 56%;
+  height: 0;
+  padding-bottom: 35%;
+  opacity:0.0;
+}
+
+.art2:hover {
+  background-color: black;
+  opacity:0.3;
 }
 
 .art3 {
   display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+  position: relative;
+  margin-left: 55%;
+  margin-top: 21.5%;
+  width: 36%;
+  height: 0;
+  padding-bottom: 115%;
+  opacity:0.0;
+  clip-path: polygon(0 17.5%, 100% 0, 100% 100%, 0 92%);
+}
+
+.art3:hover {
+  background-color: black;
+  opacity:0.3;
+}
+
+.deepfake1 {
+  display: block;
+  position: relative;
+  margin-left: 35.5%;
+  margin-top: 48.5%;
+  width: 64.7%;
+  height: 0;
+  padding-bottom: 85%;
+  opacity:0.0;
+}
+
+.deepfake1:hover {
+  background-color: black;
+  opacity:0.3;
+}
+
+.deepfake2 {
+  display: block;
+  position: relative;
+  margin-left: 22%;
+  margin-top: 48.6%;
+  width: 64.6%;
+  height: 0;
+  padding-bottom: 85%;
+  opacity:0.0;
+}
+
+.deepfake2:hover {
+  background-color: black;
+  opacity:0.3;
+}
+
+.deepfake3 {
+  display: block;
+  position: relative;
+  margin-left: 6.8%;
+  margin-top: 47.5%;
+  width: 67%;
+  height: 0;
+  padding-bottom: 86%;
+  opacity:0.0;
+  clip-path: polygon(2.5% 1%, 100% 0, 100% 100%, 0 100%);
+}
+
+.deepfake3:hover {
+  background-color: black;
+  opacity:0.3;
 }
 
 .music1 {
   display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+  position: relative;
+  margin-left: 38.5%;
+  margin-top: 44.8%;
+  width: 48%;
+  height: 0;
+  padding-bottom: 93%;
+  opacity:0.0;
+  clip-path: polygon(0 7%, 99% 0, 101% 99%, 2% 94%);
+}
+
+.music1:hover {
+  background-color: black;
+  opacity:0.3;
 }
 
 .music2 {
   display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+  position: relative;
+  margin-left: 35%;
+  margin-top: 57.3%;
+  width: 44%;
+  height: 0;
+  padding-bottom: 62%;
+  opacity:0.0;
+  clip-path: polygon(0 0, 100% 10.5%, 100% 92%, 0 100%);
+}
+
+.music2:hover {
+  background-color: black;
+  opacity:0.3;
 }
 
 .music3 {
   display: block;
-  margin-left: 20%;
-  margin-top: 20%;
+  position: relative;
+  margin-left: 20.5%;
+  margin-top: 52.8%;
+  width: 56.7%;
+  height: 0;
+  padding-bottom: 66.5%;
+  opacity:0.0;
+  clip-path: polygon(0 2.5%, 99% 0.5%, 100% 100%, 0 96%);
+}
+
+.music3:hover {
+  background-color: black;
+  opacity:0.3;
 }

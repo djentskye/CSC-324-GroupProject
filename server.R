@@ -59,102 +59,84 @@ server <- function(input, output, session) {
   observeEvent(input$E2_to_map, switch_page("main"))
   observeEvent(input$E3_to_map, switch_page("main"))
   
-  observeEvent(input$deepfake1, {
-    showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/deepfake1.html"),
-      size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
-    ))
-  })
-  
-  observeEvent(input$deepfake2, {
-    showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/deepfake2.html"),
-      size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
-    ))
-  })
-  
-  observeEvent(input$deepfake3, {
-    showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/deepfake3.html"),
-      size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
-    ))
-  })
-  
   observeEvent(input$art1, {
     showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/art1.html"),
+      title = "Exhibit",
+      includeHTML("./html/art1.html"),
       size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
+      easyClose = TRUE
     ))
   })
   
   observeEvent(input$art2, {
     showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/art2.html"),
+      title = "Exhibit",
+      includeHTML("./html/art2.html"),
       size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
+      easyClose = TRUE
     ))
   })
   
   observeEvent(input$art3, {
     showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/art3.html"),
+      title = "Exhibit",
+      includeHTML("./html/art3.html"),
       size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
+      easyClose = TRUE
+    ))
+  })
+  
+  observeEvent(input$deepfake1, {
+    showModal(modalDialog(
+      title = "Exhibit",
+      includeHTML("./html/deepfake1.html"),
+      size = "l",
+      easyClose = TRUE
+    ))
+  })
+  
+  observeEvent(input$deepfake2, {
+    showModal(modalDialog(
+      title = "Exhibit",
+      includeHTML("./html/deepfake2.html"),
+      size = "l",
+      easyClose = TRUE
+    ))
+  })
+  
+  observeEvent(input$deepfake3, {
+    showModal(modalDialog(
+      title = "Exhibit",
+      includeHTML("./html/deepfake3.html"),
+      size = "l",
+      easyClose = TRUE
     ))
   })
   
   observeEvent(input$music1, {
     showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/music1.html"),
+      title = "Exhibit",
+      includeHTML("./html/music1.html"),
       size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
+      easyClose = TRUE
     ))
   })
   
   observeEvent(input$music2, {
     showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/music2.html"),
+      title = "Exhibit",
+      includeHTML("./html/music2.html"),
       size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
+      easyClose = TRUE
     ))
   })
   
   observeEvent(input$music3, {
     showModal(modalDialog(
-      title = "Important message",
-      includeHTML("./exhibits/music3.html"),
+      title = "",
+      includeHTML("./html/music3.html"),
       size = "l",
-      easyClose = FALSE,
-      fade = TRUE,
-      style = "background-color: red;"
+      easyClose = TRUE
     ))
   })
   

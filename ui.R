@@ -25,7 +25,13 @@ ui <- fluidPage(
     # Contents of About page
     tabPanel(
       class = "tab",
-      "About"
+      "About",
+      div(
+        div (
+          class = "about",
+          includeHTML("./html/about.html")
+        )
+      )
     ),
     
     ################################################################
@@ -73,10 +79,14 @@ ui <- fluidPage(
     
     ################################################################
     
-    # Contents of Desgin Process page
+    # Contents of Design Process page
     tabPanel(
       class = "tab",
       "Design Process",
+      div (
+        class = "design",
+        includeHTML("./html/design.html")
+      )
     ),
     
     ################################################################
@@ -86,6 +96,10 @@ ui <- fluidPage(
     tabPanel(
       class = "tab",
       "Sources",
+      div (
+        class = "sources",
+        includeHTML("./html/sources.html")
+      )
     )
   )
   
